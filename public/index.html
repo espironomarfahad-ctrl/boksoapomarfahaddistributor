@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omarfahad Espiron | Official BOK Soap Distributor · Zamboanga City</title>
+<meta name="description" content="Official Blueworld Kinetic member and BOK Soap distributor in Zamboanga City. Order BOK Creamy Milk, Migotona, Gluta Milky Lemon and Matcha Barley Latte with J&T delivery.">
+<meta property="og:title" content="Omarfahad Espiron | Official BOK Soap Distributor">
+<meta property="og:description" content="Genuine BOK products from an official Blueworld Kinetic member in Zamboanga City, Philippines.">
+<meta property="og:image" content="/.netlify/images?url=/img/cover.png&w=1200&fm=jpg">
+<link rel="icon" href="/.netlify/images?url=/img/logo.jpg&w=64&h=64&fit=cover&fm=png">
+<link rel="apple-touch-icon" href="/.netlify/images?url=/img/logo.jpg&w=180&h=180&fit=cover&fm=png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0a1a3a; --navy-2:#102654; --blue:#1d5fe0; --sky:#4fa8ff;
+    --gold:#c9a24a; --gold-soft:#f4ead2;
+    --ink:#0f172a; --muted:#5b6478; --line:#e3e8f2; --bg:#f6f8fc; --white:#fff;
+    --radius:18px; --shadow:0 18px 50px -24px rgba(10,26,58,.35);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:84px}
+  body{font-family:Manrope,system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{width:min(1180px,92vw);margin:0 auto}
+  h1,h2,h3{line-height:1.15}
+  h1,h2{font-family:"DM Serif Display",Georgia,serif;font-weight:400;letter-spacing:-.01em}
+  h2{font-size:clamp(2rem,3.6vw,2.9rem);color:var(--navy)}
+  .eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-size:.75rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--blue)}
+  .eyebrow::before{content:"";width:28px;height:2px;background:var(--gold)}
+  .lead{color:var(--muted);font-size:1.075rem;max-width:620px}
+  section{padding:104px 0}
+  .section-head{margin-bottom:52px;display:grid;gap:14px}
+  .section-head.center{text-align:center;justify-items:center}
+  .section-head.center .lead{margin:0 auto}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:.95rem 1.6rem;border-radius:999px;font-weight:700;font-size:.95rem;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer;border:0}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:var(--blue);color:#fff;box-shadow:0 12px 30px -12px rgba(29,95,224,.7)}
+  .btn-primary:hover{background:#174fc0}
+  .btn-gold{background:var(--gold);color:var(--navy)}
+  .btn-ghost{border:1.5px solid rgba(255,255,255,.35);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.08)}
+  .btn-outline{border:1.5px solid var(--line);color:var(--navy);background:#fff}
+  .btn-outline:hover{border-color:var(--blue);color:var(--blue)}
+  .btn svg{width:18px;height:18px}
+
+  /* Nav */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+  .brand{display:flex;align-items:center;gap:.75rem}
+  .brand img{width:46px;height:46px;object-fit:contain}
+  .brand b{display:block;font-size:1.02rem;letter-spacing:.06em;color:var(--navy)}
+  .brand small{display:block;font-size:.66rem;letter-spacing:.2em;color:var(--muted);font-weight:700;text-transform:uppercase}
+  .nav-links{display:flex;align-items:center;gap:2rem;font-weight:600;font-size:.92rem;color:var(--muted)}
+  .nav-links a:not(.btn):hover{color:var(--blue)}
+  .nav-links .btn{padding:.7rem 1.25rem;color:#fff}
+  .menu-btn{display:none;background:none;border:0;padding:.5rem;color:var(--navy)}
+  .menu-btn svg{width:26px;height:26px}
+
+  /* Hero */
+  .hero{position:relative;background:radial-gradient(1200px 600px at 85% -10%,#1f4fb8 0%,transparent 60%),linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff;padding:88px 0 120px;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:120px;background:linear-gradient(transparent,rgba(0,0,0,.18))}
+  .hero-grid{display:grid;grid-template-columns:1.02fr 1fr;gap:64px;align-items:center;position:relative;z-index:1}
+  .badge{display:inline-flex;align-items:center;gap:.55rem;padding:.45rem .95rem .45rem .5rem;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);font-size:.82rem;font-weight:600}
+  .badge i{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--gold);color:var(--navy);font-style:normal;font-size:.75rem;font-weight:800}
+  .hero h1{font-size:clamp(2.6rem,5.4vw,4.4rem);margin:22px 0 20px}
+  .hero h1 em{font-style:italic;color:var(--sky)}
+  .hero p{color:#c6d3ee;font-size:1.1rem;max-width:540px}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+  .hero-stats{display:flex;gap:40px;margin-top:48px;padding-top:28px;border-top:1px solid rgba(255,255,255,.12)}
+  .hero-stats b{display:block;font-family:"DM Serif Display",serif;font-weight:400;font-size:2rem;color:#fff}
+  .hero-stats span{font-size:.8rem;color:#9fb1d6;letter-spacing:.04em}
+  .hero-media{position:relative}
+  .hero-media .frame{border-radius:22px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.14);aspect-ratio:1671/941}
+  .hero-media .frame img{width:100%;height:100%;object-fit:cover}
+  .hero-media .chip{position:absolute;left:-22px;bottom:-26px;background:#fff;color:var(--navy);border-radius:16px;padding:14px 18px;display:flex;gap:12px;align-items:center;box-shadow:var(--shadow);font-size:.85rem}
+  .hero-media .chip img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+  .hero-media .chip b{display:block;font-size:.95rem}
+  .hero-media .chip span{color:var(--muted)}
+
+  /* Trust strip */
+  .trust{background:#fff;border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+  .trust div{padding:28px 22px;display:flex;gap:14px;align-items:center;border-right:1px solid var(--line)}
+  .trust div:last-child{border-right:0}
+  .ico{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:#eaf1ff;color:var(--blue)}
+  .ico svg{width:22px;height:22px}
+  .trust b{display:block;font-size:.95rem;color:var(--navy)}
+  .trust span{font-size:.82rem;color:var(--muted)}
+
+  /* Products */
+  #products{background:var(--bg)}
+  .discount{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;background:linear-gradient(110deg,var(--navy),#16357a);color:#fff;border-radius:var(--radius);padding:26px 32px;margin-bottom:36px}
+  .discount strong{font-family:"DM Serif Display",serif;font-weight:400;font-size:1.7rem;color:var(--gold)}
+  .discount p{color:#c6d3ee;font-size:.95rem}
+  .products{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  .product{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+  .product:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .product .shot{background:linear-gradient(180deg,#f1f5fd,#e7edf8);aspect-ratio:4/5;display:grid;place-items:center;padding:22px}
+  .product .shot img{max-height:100%;width:auto;border-radius:8px;filter:drop-shadow(0 18px 22px rgba(10,26,58,.22))}
+  .product .body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .tag{align-self:flex-start;font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);background:#eaf1ff;padding:.3rem .6rem;border-radius:6px}
+  .tag.gold{color:#8a6a1f;background:var(--gold-soft)}
+  .product h3{font-size:1.15rem;color:var(--navy)}
+  .product p{font-size:.88rem;color:var(--muted)}
+  .price{display:flex;align-items:baseline;gap:10px;margin-top:auto;padding-top:12px;border-top:1px dashed var(--line)}
+  .price b{font-size:1.45rem;color:var(--navy)}
+  .price s{color:#9aa3b5;font-size:.9rem}
+  .price small{margin-left:auto;font-size:.72rem;font-weight:700;color:var(--muted)}
+  .product .btn{width:100%;padding:.8rem 1rem;font-size:.88rem}
+  .fine{margin-top:22px;font-size:.82rem;color:var(--muted);text-align:center}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+  .portrait{position:relative}
+  .portrait img{border-radius:24px;aspect-ratio:1/1;object-fit:cover;box-shadow:var(--shadow)}
+  .portrait .seal{position:absolute;right:-18px;top:28px;background:var(--navy);color:#fff;border-radius:16px;padding:14px 18px;font-size:.78rem;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.1)}
+  .portrait .seal b{display:block;color:var(--gold);font-size:.95rem}
+  .about h2{margin:14px 0 18px}
+  .about .lead+.lead{margin-top:14px}
+  .creds{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:30px 0 34px}
+  .creds div{display:flex;gap:12px;align-items:flex-start;padding:16px;border:1px solid var(--line);border-radius:14px}
+  .creds b{display:block;font-size:.92rem;color:var(--navy)}
+  .creds span{font-size:.8rem;color:var(--muted)}
+  .about .actions{display:flex;gap:12px;flex-wrap:wrap}
+
+  /* Promos */
+  #promos{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff}
+  #promos h2{color:#fff}
+  #promos .lead{color:#b9c7e6}
+  #promos .eyebrow{color:var(--sky)}
+  .promos{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .promo{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);overflow:hidden}
+  .promo img{aspect-ratio:3/2;object-fit:cover;width:100%}
+  .promo .body{padding:24px 26px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+  .promo h3{font-size:1.2rem}
+  .promo span{font-size:.88rem;color:#9fb1d6}
+  .promo .pill{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);background:var(--gold);padding:.4rem .8rem;border-radius:999px}
+
+  /* Steps */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+  .step{position:relative;padding:30px 26px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+  .step::before{counter-increment:s;content:"0" counter(s);font-family:"DM Serif Display",serif;font-size:2.4rem;color:var(--gold);line-height:1}
+  .step h3{font-size:1.05rem;color:var(--navy);margin:16px 0 8px}
+  .step p{font-size:.9rem;color:var(--muted)}
+  .delivery{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .delivery div{display:flex;gap:16px;padding:24px;border-radius:var(--radius);background:var(--bg)}
+  .delivery b{display:block;color:var(--navy);margin-bottom:4px}
+  .delivery p{font-size:.9rem;color:var(--muted)}
+
+  /* Branches */
+  #branches{background:var(--bg)}
+  .branch-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:stretch}
+  .map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#a9d3df}
+  .map img{width:100%;height:100%;object-fit:cover}
+  .locations{display:grid;gap:14px}
+  .loc{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .loc.main{border-color:var(--blue);box-shadow:0 0 0 3px #eaf1ff}
+  .loc .dot{flex:none;width:12px;height:12px;border-radius:50%;background:var(--sky);box-shadow:0 0 0 5px #e1efff}
+  .loc.main .dot{background:var(--gold);box-shadow:0 0 0 5px var(--gold-soft)}
+  .loc b{display:block;color:var(--navy)}
+  .loc span{font-size:.85rem;color:var(--muted)}
+  .loc em{margin-left:auto;font-style:normal;font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+
+  /* FAQ */
+  .faq{max-width:820px;margin:0 auto;display:grid;gap:12px}
+  details{border:1px solid var(--line);border-radius:14px;padding:20px 24px;background:#fff}
+  summary{cursor:pointer;font-weight:700;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:16px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--blue);transition:transform .2s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{margin-top:12px;color:var(--muted);font-size:.95rem}
+
+  /* CTA */
+  .cta{padding:0 0 104px}
+  .cta-box{position:relative;overflow:hidden;border-radius:28px;background:linear-gradient(120deg,var(--navy) 0%,#1844a8 100%);color:#fff;padding:64px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+  .cta-box::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;border:60px solid rgba(255,255,255,.05)}
+  .cta-box h2{color:#fff}
+  .cta-box p{color:#c6d3ee;margin-top:14px}
+  .contact-list{display:grid;gap:12px;position:relative;z-index:1}
+  .contact-list a{display:flex;align-items:center;gap:14px;padding:16px 20px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);transition:background .2s}
+  .contact-list a:hover{background:rgba(255,255,255,.14)}
+  .contact-list .ico{background:rgba(255,255,255,.12);color:#fff}
+  .contact-list b{display:block;font-size:.95rem}
+  .contact-list span{font-size:.82rem;color:#b9c7e6}
+
+  /* Footer */
+  footer{background:#071330;color:#9fb1d6;padding:60px 0 30px;font-size:.9rem}
+  .foot{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .foot .brand b{color:#fff}
+  .foot .brand small{color:#7f91b8}
+  .foot .brand img{background:#fff;border-radius:12px;padding:4px}
+  .foot h4{color:#fff;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px}
+  .foot ul{list-style:none;display:grid;gap:10px}
+  .foot a:hover{color:#fff}
+  .foot p{margin-top:16px;max-width:360px}
+  .copy{padding-top:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.8rem}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:1024px){
+    .products,.steps{grid-template-columns:repeat(2,1fr)}
+    .trust .wrap{grid-template-columns:repeat(2,1fr)}
+    .trust div:nth-child(2){border-right:0}
+    .trust div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  }
+  @media (max-width:880px){
+    section{padding:76px 0}
+    .menu-btn{display:block}
+    .nav-links{position:absolute;top:76px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:1px solid var(--line);padding:8px 4vw 20px;display:none}
+    .nav-links.open{display:flex}
+    .nav-links a:not(.btn){padding:14px 0;border-bottom:1px solid var(--line)}
+    .nav-links .btn{margin-top:16px}
+    .hero{padding:56px 0 90px}
+    .hero-grid,.about-grid,.branch-grid,.cta-box,.foot,.promos,.delivery{grid-template-columns:1fr}
+    .hero-grid{gap:56px}
+    .hero-media .chip{left:12px}
+    .portrait{max-width:440px}
+    .portrait .seal{right:12px}
+    .cta-box{padding:40px 26px}
+  }
+  @media (max-width:560px){
+    .products,.steps,.creds,.trust .wrap{grid-template-columns:1fr}
+    .trust div{border-right:0;border-bottom:1px solid var(--line)}
+    .hero-stats{gap:24px}
+    .hero-stats b{font-size:1.6rem}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Blueworld Kinetic — home">
+      <img src="/.netlify/images?url=/img/logo.jpg&w=120&fm=webp" alt="Blueworld Kinetic logo" width="46" height="46">
+      <span><b>BLUEWORLD</b><small>Kinetic Business Int'l</small></span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#promos">Promos</a>
+      <a href="#order">How to Order</a>
+      <a href="#branches">Branches</a>
+      <a class="btn btn-primary" href="https://www.facebook.com/share/1Dbm3QEnCx/" target="_blank" rel="noopener">Order Now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="badge"><i>✓</i> Official Member · Blueworld Kinetic Business International</span>
+        <h1>Genuine BOK products, <em>delivered</em> from Zamboanga City.</h1>
+        <p>I'm Omarfahad Espiron, an official BOK Soap distributor. I help customers across Mindanao and Sabah get authentic BOK skincare and wellness products with fast, reliable J&amp;T delivery.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#products">Shop the Collection</a>
+          <a class="btn btn-ghost" href="https://www.facebook.com/share/1Dbm3QEnCx/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.19 5.43 3.14 7.17.16.15.26.35.27.57l.05 1.78c.02.57.6.94 1.12.71l1.98-.87c.17-.08.36-.09.53-.04.91.25 1.88.38 2.91.38 5.64 0 10-4.13 10-9.7C22 6.13 17.64 2 12 2zm6 7.46-2.94 4.66a1.5 1.5 0 0 1-2.17.4l-2.34-1.75a.6.6 0 0 0-.72 0l-3.16 2.4c-.42.32-.97-.18-.69-.63l2.94-4.66a1.5 1.5 0 0 1 2.17-.4l2.34 1.75a.6.6 0 0 0 .72 0l3.16-2.4c.42-.32.97.18.69.63z"/></svg>
+            Message Me
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div><b>4</b><span>BOK products</span></div>
+          <div><b>50%</b><span>Distributor price</span></div>
+          <div><b>4</b><span>Service areas</span></div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="frame">
+          <img src="/.netlify/images?url=/img/cover.png&w=1200&fm=webp" srcset="/.netlify/images?url=/img/cover.png&w=640&fm=webp 640w, /.netlify/images?url=/img/cover.png&w=1200&fm=webp 1200w, /.netlify/images?url=/img/cover.png&w=1671&fm=webp 1671w" sizes="(max-width:880px) 92vw, 560px" alt="Omarfahad Espiron, Official Member and Distributor of Blueworld Kinetic Business International" width="1671" height="941" fetchpriority="high">
+        </div>
+        <div class="chip">
+          <img src="/.netlify/images?url=/img/profile.jpg&w=96&h=96&fit=cover&position=top&fm=webp" alt="" width="44" height="44">
+          <div><b>Omarfahad Espiron</b><span>Official Distributor · Zamboanga City</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <div class="trust">
+    <div class="wrap">
+      <div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></span><p><b>100% Authentic</b><span>Sourced from Blueworld Kinetic</span></p></div>
+      <div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span><p><b>J&amp;T Express</b><span>Nationwide delivery options</span></p></div>
+      <div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><p><b>Personal Service</b><span>Order directly via Messenger</span></p></div>
+      <div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><p><b>Local Pickup</b><span>Available in Zamboanga City</span></p></div>
+    </div>
+  </div>
+
+  <!-- Products -->
+  <section id="products">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">The BOK Collection</span>
+        <h2>Premium care, honest prices.</h2>
+        <p class="lead">Whitening soaps made with glutathione, niacinamide and natural extracts, plus a nourishing matcha barley drink. Prices below follow the official Blueworld Kinetic price list.</p>
+      </div>
+
+      <div class="discount reveal">
+        <div>
+          <strong>50% off for distributors</strong>
+          <p>Distributor price (DP) is half the suggested retail price on every BOK product. Ask me how to become one.</p>
+        </div>
+        <a class="btn btn-gold" href="#join">Become a Distributor</a>
+      </div>
+
+      <div class="products">
+        <article class="product reveal">
+          <div class="shot"><img src="/.netlify/images?url=/img/creamy-milk.jpg&w=420&fm=webp" alt="BOK Soap Creamy Milk sachet" loading="lazy" width="272" height="430"></div>
+          <div class="body">
+            <span class="tag">Soap · 70 g</span>
+            <h3>BOK Creamy Milk</h3>
+            <p>Coconut oil and niacinamide for soft, smooth and visibly brighter skin.</p>
+            <div class="price"><b>₱80</b><s>DP ₱40</s><small>10 PV</small></div>
+            <a class="btn btn-outline" href="https://www.facebook.com/share/1Dbm3QEnCx/" target="_blank" rel="noopener">Order Creamy Milk</a>
+          </div>
+        </article>
+        <article class="product reveal">
+          <div class="shot"><img src="/.netlify/images?url=/img/migotona.jpg&w=420&fm=webp" alt="BOK Soap Migotona sachet" loading="lazy" width="267" height="430"></div>
+          <div class="body">
+            <span class="tag">Soap · 70 g</span>
+            <h3>BOK Migotona</h3>
+            <p>Glutathione, collagen, coconut and charcoal for a deep-cleansing, even tone.</p>
+            <div class="price"><b>₱80</b><s>DP ₱40</s><small>10 PV</small></div>
+            <a class="btn btn-outline" href="https://www.facebook.com/share/1Dbm3QEnCx/" target="_blank" rel="noopener">Order Migotona</a>
+          </div>
+        </article>
+        <article class="product reveal">
+          <div class="shot"><img src="/.netlify/images?url=/img/gluta-lemon.jpg&w=420&fm=webp" alt="BOK Soap Gluta Milky Lemon sachet" loading="lazy" width="290" height="420"></div>
+          <div class="body">
+            <span class="tag gold">Best value · 130 g</span>
+            <h3>BOK Gluta Milky Lemon</h3>
+            <p>Glutathione, niacinamide, goat's milk and lemon extract in a larger bar.</p>
+            <div class="price"><b>₱200</b><s>DP ₱100</s><small>25 PV</small></div>
+            <a class="btn btn-outline" href="https://www.facebook.com/share/1Dbm3QEnCx/" target="_blank" rel="noopener">Order Gluta Milky Lemon</a>
+          </div>
+        </article>
+        <article class="product reveal">
+          <div class="shot"><img src="/.netlify/images?url=/img/matcha.jpg&w=420&fm=webp" alt="BOK Drink Matcha Barley Latte pouch" loading="lazy" width="280" height="452"></div>
+          <div class="body">
+            <span class="tag">Drink · 10 sachets</span>
+            <h3>Matcha Barley Latte</h3>
+            <p>Premium Japanese matcha with organic barley grass. Smooth, creamy and rich in antioxidants.</p>
+            <div class="price"><b>₱1,000</b><s>DP ₱500</s><small>125 PV</small></div>
+            <a class="btn btn-outline" href="https://www.facebook.com/share/1Dbm3QEnCx/" target="_blank" rel="noopener">Order Matcha Latte</a>
+          </div>
+        </article>
+      </div>
+      <p class="fine">SRP = suggested retail price · DP = distributor price · PV = point value. Soaps are for external use only. Message me to confirm current stock before ordering.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="wrap about-grid">
+      <div class="portrait reveal">
+        <img src="/.netlify/images?url=/img/profile.jpg&w=880&fm=webp" srcset="/.netlify/images?url=/img/profile.jpg&w=480&fm=webp 480w, /.netlify/images?url=/img/profile.jpg&w=880&fm=webp 880w" sizes="(max-width:880px) 92vw, 480px" alt="Omarfahad Espiron, Official Member of Blueworld Kinetic" loading="lazy" width="1086" height="1086">
+        <div class="seal"><b>Official Member</b>Blueworld Kinetic</div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Your Local Distributor</span>
+        <h2>Hi, I'm Omarfahad Espiron.</h2>
+        <p class="lead">I'm an official member and distributor of Blueworld Kinetic Business International, based in Zamboanga City. I also study at ZPPSU, and I treat this business with the same discipline I bring to my studies.</p>
+        <p class="lead">Whether you're buying one bar or stocking up for resale, I'll help you pick the right product, confirm availability and arrange delivery. Every order gets my personal attention.</p>
+        <div class="creds">
+          <div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg></span><p><b>Verified Member</b><span>Blueworld Kinetic Business Int'l</span></p></div>
+          <div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span><p><b>ZPPSU Student</b><span>Discipline · Knowledge · Success</span></p></div>
+          <div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><p><b>Zamboanga City</b><span>Mindanao, Philippines</span></p></div>
+          <div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><p><b>0926 212 7023</b><span>Call or text anytime</span></p></div>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://www.facebook.com/share/1Dbm3QEnCx/" target="_blank" rel="noopener">Visit My Facebook Page</a>
+          <a class="btn btn-outline" href="tel:+639262127023">Call Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promos -->
+  <section id="promos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Distributor Incentives</span>
+        <h2>Grow the business. Earn the trip.</h2>
+        <p class="lead">Blueworld Kinetic rewards active distributors with travel incentives. Join my team and I'll walk you through how to qualify.</p>
+      </div>
+      <div class="promos">
+        <article class="promo reveal">
+          <img src="/.netlify/images?url=/img/promo-dakak.jpg&w=1100&fm=webp" alt="Dakak and Fantasy Land travel incentive, August 15 to October 15, 2026" loading="lazy" width="1300" height="866">
+          <div class="body"><div><h3>Dakak &amp; Fantasy Land</h3><span>Aug 15 – Oct 15, 2026</span></div><span class="pill">Local Trip</span></div>
+        </article>
+        <article class="promo reveal">
+          <img src="/.netlify/images?url=/img/promo-bangkok.jpg&w=1100&fm=webp" alt="Thailand Bangkok travel incentive, August 19 to November 19, 2026" loading="lazy" width="1300" height="872">
+          <div class="body"><div><h3>Bangkok, Thailand</h3><span>Aug 19 – Nov 19, 2026</span></div><span class="pill">International</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to order -->
+  <section id="order">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">How to Order</span>
+        <h2>Four simple steps.</h2>
+        <p class="lead">No account or checkout needed. Just message me and I'll take care of the rest.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><h3>Choose your products</h3><p>Browse the collection and decide which BOK products and quantities you want.</p></div>
+        <div class="step reveal"><h3>Send me a message</h3><p>Message me on Facebook, call or text 0926 212 7023 with your order and delivery address.</p></div>
+        <div class="step reveal"><h3>Confirm the details</h3><p>I'll confirm stock, the total with shipping fee, and the payment method before anything ships.</p></div>
+        <div class="step reveal"><h3>Receive your order</h3><p>Your order ships via J&amp;T Express, or you can pick it up in Zamboanga City.</p></div>
+      </div>
+      <div class="delivery">
+        <div class="reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span><p><b>J&amp;T Express delivery</b>Shipping is available wherever J&amp;T delivers. Fees and delivery time depend on your location and are confirmed before you pay.</p></div>
+        <div class="reveal"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 2l9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><p><b>Pickup in Zamboanga City</b>Local customers can arrange a pickup. Message me for the exact meeting point and schedule.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Branches -->
+  <section id="branches">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Our Network</span>
+        <h2>Serving Mindanao &amp; Sabah.</h2>
+        <p class="lead">Blueworld Kinetic has a growing network of branches and distributors across the region. Contact me to confirm branch addresses, hours and availability.</p>
+      </div>
+      <div class="branch-grid">
+        <div class="map reveal"><img src="/.netlify/images?url=/img/branch-map.png&w=1000&fm=webp" alt="Map of Blueworld Kinetic locations: Zamboanga City, Basilan, Tawi-Tawi and Sabah, Malaysia" loading="lazy" width="671" height="375"></div>
+        <div class="locations">
+          <div class="loc main reveal"><span class="dot"></span><p><b>Zamboanga City</b><span>Home base of Omarfahad Espiron</span></p><em>Main</em></div>
+          <div class="loc reveal"><span class="dot"></span><p><b>Basilan</b><span>Ask for the local branch address</span></p></div>
+          <div class="loc reveal"><span class="dot"></span><p><b>Tawi-Tawi</b><span>Ask for the local branch address</span></p></div>
+          <div class="loc reveal"><span class="dot"></span><p><b>Sabah, Malaysia</b><span>Ask about cross-border orders</span></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Questions</span>
+        <h2>Frequently asked.</h2>
+      </div>
+      <div class="faq">
+        <details class="reveal"><summary>Are these products authentic?</summary><p>Yes. I'm an official member of Blueworld Kinetic Business International, and every product comes directly from the company's distribution channel.</p></details>
+        <details class="reveal"><summary>How much is shipping?</summary><p>Shipping fees depend on your location and order size. I'll confirm the exact J&amp;T fee with you before you pay.</p></details>
+        <details class="reveal"><summary>What payment methods do you accept?</summary><p>Message me to discuss payment options. We'll agree on the method together before I ship your order.</p></details>
+        <details class="reveal" id="join"><summary>How do I become a distributor?</summary><p>Distributors buy at the distributor price (50% of SRP), earn point value (PV) on every product and can qualify for travel incentives like Dakak and Bangkok. Message me and I'll explain how to join my team.</p></details>
+        <details class="reveal"><summary>Is BOK Soap safe for daily use?</summary><p>BOK soaps are made for external use only. If you have sensitive skin, do a patch test first and stop using the soap if irritation occurs.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="contact">
+    <div class="wrap">
+      <div class="cta-box reveal">
+        <div>
+          <span class="eyebrow" style="color:var(--sky)">Ready to order?</span>
+          <h2 style="margin-top:14px">Let's get your BOK products on the way.</h2>
+          <p>Message me with the products you want, the quantity and your delivery location. I usually reply the same day.</p>
+        </div>
+        <div class="contact-list">
+          <a href="https://www.facebook.com/share/1Dbm3QEnCx/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14A28 28 0 0 0 14.64 2C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4z"/></svg></span><p><b>Message on Facebook</b><span>Fastest way to order</span></p></a>
+          <a href="tel:+639262127023"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><p><b>Call 0926 212 7023</b><span>Talk to me directly</span></p></a>
+          <a href="sms:+639262127023"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><p><b>Send an SMS</b><span>Text your order anytime</span></p></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="#top">
+          <img src="/.netlify/images?url=/img/logo.jpg&w=120&fm=webp" alt="Blueworld Kinetic logo" width="46" height="46" loading="lazy">
+          <span><b>BLUEWORLD</b><small>Kinetic Business Int'l</small></span>
+        </a>
+        <p>Omarfahad Espiron, Official BOK Soap Distributor. Authentic BOK products and J&amp;T delivery from Zamboanga City, Philippines.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul><li><a href="#products">Products</a></li><li><a href="#about">About</a></li><li><a href="#promos">Promos</a></li><li><a href="#order">How to Order</a></li><li><a href="#branches">Branches</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li><a href="tel:+639262127023">0926 212 7023</a></li><li><a href="https://www.facebook.com/share/1Dbm3QEnCx/" target="_blank" rel="noopener">Facebook Page</a></li><li>Zamboanga City, Philippines</li></ul>
+      </div>
+    </div>
+    <div class="copy"><span>© 2026 Omarfahad Espiron · Blueworld Kinetic Distributor</span><span>Same vision. Bigger opportunities. Brighter tomorrow.</span></div>
+  </div>
+</footer>
+
+<script>
+  const btn = document.querySelector('.menu-btn'), links = document.getElementById('nav-links');
+  btn.addEventListener('click', () => btn.setAttribute('aria-expanded', links.classList.toggle('open')));
+  links.addEventListener('click', e => { if (e.target.closest('a')) { links.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); } });
+
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+  }), { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
